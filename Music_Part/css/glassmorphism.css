@@ -1,0 +1,33 @@
+.glassmorphism-list {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 20px;
+    color: #3f3f3f;
+    max-height: 400px; /* 增加最大高度 */
+    overflow-y: auto; /* 增加垂直滚动条 */
+    width: 300px; /* 增加宽度 */
+}
+
+.glassmorphism-list h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.glassmorphism-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.glassmorphism-list li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glassmorphism-list li:last-child {
+    border-bottom: none;
+}
