@@ -118,3 +118,13 @@ progressContainer.onclick = setProgress
 audio.ontimeupdate = updateProgress
 // 3.3 歌曲结束后自动下一首
 audio.onended = nextSong
+
+//checkPassword
+function checkPassword() {
+    if (document.getElementById('pass').value === 'Xzj13510jiushishena!!!') {
+        alert('密码正确,点击确定跳转页面');
+        window.location.href = '../Music_Upload_Part/Music_Upload_Index.html';
+    } else {
+        alert('密码错误,请再次尝试');
+    }
+}
