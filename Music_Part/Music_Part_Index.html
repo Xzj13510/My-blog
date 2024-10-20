@@ -59,6 +59,25 @@
                 <i class="fas fa-forward"></i>
             </button>
         </div>
+        
+    </div>
+    <!--密钥-->
+    <div class="key" style="position: fixed; bottom: 10px; right: 10px;">
+        <label for="pass">
+            管理员密码:
+        </label>
+        <input type="password" id="pass" name="password"/>
+        <button onclick="checkPassword()">验证</button>
+        <script>
+            function checkPassword() {
+                if (document.getElementById('pass').value === 'Xzj13510jiushishena!!!') {
+                    alert('密码正确,点击确定跳转页面');
+                    window.location.href = '../Music_Upload_Part/Music_Upload_Index.html';
+                } else {
+                    alert('密码错误,请再次尝试');
+                }
+            }
+        </script>
     </div>
     <script src="./js/Music_script.js"></script>
 </body>
